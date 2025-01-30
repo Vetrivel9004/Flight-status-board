@@ -1,9 +1,11 @@
 .flight-details {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
 }
 
 .back-link {
@@ -12,6 +14,7 @@
   color: #007bff;
   text-decoration: none;
   font-weight: bold;
+  font-size: 16px;
 }
 
 .back-link:hover {
@@ -21,27 +24,42 @@
 .details-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
+  gap: 20px;
 }
 
 .detail-item {
-  background-color: white;
+  background-color: #f9f9f9;
   border: 1px solid #ddd;
-  padding: 15px;
-  border-radius: 4px;
+  padding: 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.detail-item:hover {
+  background-color: #f1f1f1;
 }
 
 .detail-item strong {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   color: #333;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.detail-item p {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
 }
 
 .status {
   font-weight: bold;
-  padding: 4px 8px;
-  border-radius: 4px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  text-align: center;
   display: inline-block;
+  min-width: 80px;
 }
 
 .status.on-time {
@@ -68,4 +86,23 @@
   color: #dc3545;
   text-align: center;
   padding: 20px;
+  font-size: 16px;
+}
+
+/* Additional styling for better alignment */
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.detail-item strong {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.detail-item p {
+  font-weight: normal;
+  color: #333;
 }

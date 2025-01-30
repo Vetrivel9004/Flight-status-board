@@ -2,32 +2,39 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  font-family: Arial, sans-serif;
 }
 
 .flight-board table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #f9f9f9;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .flight-board th, .flight-board td {
   border: 1px solid #ddd;
-  padding: 12px;
+  padding: 15px;
   text-align: left;
 }
 
 .flight-board th {
-  background-color: #f2f2f2;
+  background-color: #007bff;
+  color: white;
   font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
 .flight-board tr:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: #f9f9f9;
 }
 
 .flight-board tr:hover {
-  background-color: #e6e6e6;
+  background-color: #f1f1f1;
+  transition: background-color 0.3s ease;
 }
 
 .flight-board a {
@@ -42,8 +49,11 @@
 
 .status {
   font-weight: bold;
-  padding: 4px 8px;
-  border-radius: 4px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  text-align: center;
+  display: inline-block;
+  min-width: 80px;
 }
 
 .status.on-time {
@@ -70,4 +80,22 @@
   color: #dc3545;
   text-align: center;
   padding: 20px;
+  font-size: 16px;
+}
+
+/* Additional styling for better alignment */
+.flight-board td {
+  vertical-align: middle;
+}
+
+.flight-board th {
+  text-align: center;
+}
+
+.flight-board td:first-child, .flight-board th:first-child {
+  padding-left: 20px;
+}
+
+.flight-board td:last-child, .flight-board th:last-child {
+  padding-right: 20px;
 }
