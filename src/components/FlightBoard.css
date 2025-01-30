@@ -1,0 +1,73 @@
+.flight-board {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.flight-board table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.flight-board th, .flight-board td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.flight-board th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.flight-board tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.flight-board tr:hover {
+  background-color: #e6e6e6;
+}
+
+.flight-board a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.flight-board a:hover {
+  text-decoration: underline;
+}
+
+.status {
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.status.on-time {
+  background-color: #28a745;
+  color: white;
+}
+
+.status.delayed {
+  background-color: #dc3545;
+  color: white;
+}
+
+.status.boarding {
+  background-color: #ffc107;
+  color: black;
+}
+
+.status.departed {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.error {
+  color: #dc3545;
+  text-align: center;
+  padding: 20px;
+}

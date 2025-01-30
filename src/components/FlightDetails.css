@@ -1,0 +1,71 @@
+.flight-details {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.detail-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.detail-item strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.status {
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.status.on-time {
+  background-color: #28a745;
+  color: white;
+}
+
+.status.delayed {
+  background-color: #dc3545;
+  color: white;
+}
+
+.status.boarding {
+  background-color: #ffc107;
+  color: black;
+}
+
+.status.departed {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.error {
+  color: #dc3545;
+  text-align: center;
+  padding: 20px;
+}
